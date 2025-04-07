@@ -1,12 +1,12 @@
 package assignment;
 
-class Student1 {
+class Harrysassignment {
     String name;
     String usn;
     String college;
     int cgpa;
 
-    Student1(String name, String usn, String college, int cgpa) {
+    Harrysassignment(String name, String usn, String college, int cgpa) {
         this.name = name;
         this.usn = usn;
         this.college = college;
@@ -15,7 +15,7 @@ class Student1 {
 
     @Override
     public String toString() {
-        return "Student1{" +
+        return "Harrysassignment{" +
                 "name='" + name + '\'' +
                 ", usn='" + usn + '\'' +
                 ", college='" + college + '\'' +
@@ -25,13 +25,13 @@ class Student1 {
 }
 
 class StudentImplementation {
-    Student1 stuname;
+    Harrysassignment stuname;
 
-    StudentImplementation(Student1 stuname) {
+    StudentImplementation(Harrysassignment stuname) {
         this.stuname = stuname;
     }
 
-    Student1 getStudentInfo(String str) {
+    Harrysassignment getStudentInfo(String str) {
         if (stuname != null && stuname.name.equals(str)) {
             return this.stuname;
         }
@@ -64,10 +64,10 @@ class StudentImplementation {
 
 public class StdDemo {
     public static void main(String[] args) {
-        Student1 s2 = new Student1("chenna", "MIT123060", "mits", 8); // Ensure USN has digits
+        Harrysassignment s2 = new Harrysassignment("chenna", "MIT123060", "mits", 8); // Ensure USN has digits
         StudentImplementation si = new StudentImplementation(s2);
 
-        Student1 result = si.getStudentInfo("chenna");
+        Harrysassignment result = si.getStudentInfo("chenna");
         if (result != null) {
             System.out.println("Student Found: " + result);
             System.out.println("Section: " + si.getStudentSection(result));
